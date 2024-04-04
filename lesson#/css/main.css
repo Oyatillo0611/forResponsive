@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "DM Sans", sans-serif;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px ;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+   
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+    padding: 4px ;
+}
+
+.links a:hover{
+     color: #019AA4;
+     border-bottom: 1px solid  #019AA4;
+}
+ul {
+   list-style: none;
+}
+.menu{
+    display: none;
+}
+header {
+    min-height: 150vh;
+    background-image: url(../imgs/desktop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px ;
+    color: white;
+    padding-left: 20px; 
+}
+nav .container button img{
+    width: 35px;
+}
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero_info{
+    width: 580px;
+    color: white;
+}
+.hero_info h1{
+    font-size: 60px ;
+    margin-bottom: 20px;
+}
+.hero_info h1 span{
+    color: #019AA4;
+}
+.hero_info>p{
+    margin-bottom: 25px;
+}
+.hero_info button{
+    border: 1px solid #019AA4;
+    margin-bottom: 40px ;
+}
+.hero_info button img{
+    width:33px ;
+}
+.users{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    gap: 10px;
+}
+
+@media(max-width: 467px ){
+    header{
+        background-image: url(../imgs/mobile.png) ;
+        background-repeat: repeat
+    }
+    .links{
+        display: none;
+    }
+    .nav button{
+        display: none !important ;
+    }
+    .container{
+        padding: 0px 10px ;
+    }
+    .menu{
+        display: block;
+    }
+    .nav .container{
+        padding: 20px 5px ;
+    }
+    nav{
+        border-bottom:2px solid #019AA4 ;
+    }
+    .hero_info h1{
+        font-size:30px ;
+    }
+    .hero{
+        padding:30px 20px ;
+    }
+    .hero_info .btn{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 11px ;
+    }
+     .hero_info .btn span{
+        width: 100%;
+        font-size: 18px;
+     } 
+     .users{
+        width: 180px;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin: 0 auto; 
+        margin-bottom: 10px;
+     }
+     .hero_img{
+        /* border: 2px solid red;    */
+        height: 470px;
+        overflow: hidden;
+     }
+     .hero_img img{
+        width: 100%;
+     }
+}
